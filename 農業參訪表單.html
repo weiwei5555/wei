@@ -337,6 +337,48 @@
                 <input type="number" name="totalCount" placeholder="請填入參加人數" min="1" max="999" required>
                 <p class="hint-text">請填入參加本次參訪活動的總人數</p>
             </div>
+<div className="mt-4 mb-8">
+  <p className="text-sm text-gray-700 mb-3 leading-relaxed">
+    為辦理本次活動保險事宜，請提供參與者的資訊，謝謝您的協助
+  </p>
+
+  <table className="w-full border-collapse text-sm">
+    <thead>
+      <tr className="bg-green-700 text-white">
+        <th className="p-3 text-left font-semibold border border-green-700">姓名</th>
+        <th className="p-3 text-left font-semibold border border-green-700">生日</th>
+        <th className="p-3 text-left font-semibold border border-green-700">身分</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td className="p-2 border border-gray-300">
+          <input
+            type="text"
+            name="participantName1"
+            placeholder="請輸入姓名"
+            className="w-full px-2 py-1 border border-gray-300 rounded focus:outline-none focus:border-green-700"
+          />
+        </td>
+        <td className="p-2 border border-gray-300">
+          <input
+            type="date"
+            name="participantBirthday1"
+            className="w-full px-2 py-1 border border-gray-300 rounded focus:outline-none focus:border-green-700"
+          />
+        </td>
+        <td className="p-2 border border-gray-300">
+          <input
+            type="text"
+            name="participantIdentity1"
+            placeholder="例：員工、眷屬"
+            className="w-full px-2 py-1 border border-gray-300 rounded focus:outline-none focus:border-green-700"
+          />
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
 
             <!-- 參訪相關資訊 -->
             <h2 class="section-title">🚗 參訪相關資訊</h2>
